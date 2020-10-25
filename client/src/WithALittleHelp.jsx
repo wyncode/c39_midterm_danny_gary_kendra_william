@@ -13,7 +13,7 @@ const WithALittleHelp = () => {
     <BrowserRouter>
       <NavMenu />
       <Container>
-        <Route exact path="/mainpage" component={MainPage} />
+        <Route exact path="/" component={MainPage} />
         <Route exact path="/beatles" component={AboutBeatlesPage} />
         <Route exact path="/team" component={AboutTeamPage} /> 
         <Route exact path="/tabsheet" component={TabSheetTemplate} />

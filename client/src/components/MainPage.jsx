@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import SearchForm from './SearchForm';
-// import childComponent from './childComponent'; 
+import NavMenu from './NavMenu'; 
 import Row from 'react-bootstrap/Row';
 import SongBox from './SongBox';
 
@@ -32,9 +32,12 @@ const MainPage = () => {
     fetchData();
   }, [search]);
 
+  
   return (
     <div>
-     <SearchForm handleSubmitProp={handleSubmit} />
+      <SearchForm handleSubmitProp={handleSubmit} />
+       <p>Carousel goes here...look in bootstrap</p>
+       <p>Hello</p>
       <Row>
         {apiData.songs &&
           apiData.songs.map((songs) => {
