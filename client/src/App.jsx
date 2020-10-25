@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import './App.css';
 // import NavMenu from './components/NavMenu';
 // import AboutBeatlesPage from './components/AboutBeatlesPage';
@@ -18,7 +19,11 @@ const App = () => {
   useEffect(fetchDemoData, []);
 
   return (
-    <div id="#"><h3>Nav Bar Goes Here</h3><SearchForm /><h3>{serverMessage}</h3></div>
+    <div id="#">
+      <h3>Nav Bar Goes Here</h3>
+      <SearchForm />
+      <h3>{serverMessage}</h3>
+    </div>
    );
 };
 
