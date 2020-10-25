@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TeamInfo = () => {
+const TeamInfoPage = () => {
     return 
         <>
             {/*This is the About Team Page */}
@@ -40,4 +40,4 @@ const TeamInfo = () => {
         </>
 };
 
-export default TeamInfo;
+export default TeamInfoPage;
