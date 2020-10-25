@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BeatlesInfo = () => {
+const BeatlesInfoPage = () => {
     return 
         <>
             {/*This is the About Beatles Page */}
@@ -19,4 +19,4 @@ const BeatlesInfo = () => {
         </>
 };
 
-export default BeatlesInfo;
+export default BeatlesInfoPage;
