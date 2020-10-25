@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 //import { AppContextProvider } from './context/AppContext';
 //import ContextDemo from './components/ContextDemo';
 
@@ -17,13 +17,11 @@ const App = () => {
   useEffect(fetchDemoData, []);
 
   return (
-    <AppContextProvider>
-      <div id="demo">
-        <h3>Hello</h3>
-        <SearchForm />
-        <h3>{serverMessage}</h3>
-      </div>
-    </AppContextProvider>
+    <div id="demo">
+      <h3>Hello</h3>
+      <SearchForm />
+      <h3>{serverMessage}</h3>
+    </div>
   );
 };
 
