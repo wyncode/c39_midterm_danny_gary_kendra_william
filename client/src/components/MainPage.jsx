@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import SearchForm from './SearchForm';
-import childComponent from './childComponent'; 
-import Row from 'react-bootstrap/Row';
+// import SearchForm from './SearchForm';
+// import childComponent from './childComponent'; 
+// import Row from 'react-bootstrap/Row';
 
 
-const MainPageemplate = () => {
+const MainPage = () => {
   const [search, setSearch] = useState('someBeatleSong');
   const [apiData, setApiData] = useState({});
 
@@ -33,9 +33,9 @@ const MainPageemplate = () => {
 
   return (
     <>
-      <SearchForm handleSubmitProp={handleSubmit} />
+      {/* <SearchForm handleSubmitProp={handleSubmit} />
       <Row>
-        {apiData.songs &&
+        {/* {apiData.songs &&
           apiData.songs.map((songs) => {
             console.log(songs);
             return (
@@ -43,13 +43,13 @@ const MainPageemplate = () => {
                 key={songs.idSongs}
                 id={songs.idSongs}
                 image={songs.strMealThumb}
-                name={meal.strMeal}
-              />
-            );
+                name={meal.strMeal} /> */}
+            
+            {/* );
           })}
-      </Row>
+      </Row> */}
     </>
   );
-};
+}; 
 
 export default MainPage;
