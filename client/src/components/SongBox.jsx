@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 
-import './App.css';
+import '../App.css';
 
 const SongBox = ({ id, image, name }) => {
   return (
