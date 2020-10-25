@@ -7,22 +7,22 @@ const NavMenu = () => {
     <Nav activeKey="/" style={{ backgroundColor: 'green' }} as="ul">
       <Nav.Item as="li">
         <Nav.Link style={{ color: '#fff' }} href="/">
-          FoodHouse
+          With A Little Help
         </Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
-        <Nav.Link style={{ color: '#fff' }} href="/aboutBeatles">
+        <Nav.Link style={{ color: '#fff' }} href="/AboutBeatlesPage">
           About The Beatles
         </Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
 {/* changed recipe of the day to "song of the day". Would be cool if we could get this functional. Maybe tying it to the date? */}
-        <Nav.Link style={{ color: '#fff' }} href="/songfOfTheDay">
+        <Nav.Link style={{ color: '#fff' }} >
             Song of the Day
         </Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
-        <Nav.Link style={{ color: '#fff' }} href="/aboutUs">
+        <Nav.Link style={{ color: '#fff' }} href="/AboutTeamPage">
           About Us
         </Nav.Link>
       </Nav.Item>
