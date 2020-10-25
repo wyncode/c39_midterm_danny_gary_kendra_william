@@ -1,10 +1,10 @@
 import './App.css';
-import NavMenu from './components/NavMenu';
-import AboutBeatlesPage from './components/AboutBeatlesPage';
-import AboutTeamPage from './components/AboutTeamPage';
+// import NavMenu from './components/NavMenu';
+// import AboutBeatlesPage from './components/AboutBeatlesPage';
+// import AboutTeamPage from './components/AboutTeamPage';
 import SearchForm from './components/SearchForm';
-import SongBox from './components/SongBox';
-import MainPage from './components/MainPage';
+// import SongBox from './components/SongBox';
+// import MainPage from './components/MainPage';
 
 const App = () => {
   const [serverMessage, setServerMessage] = useState('');
