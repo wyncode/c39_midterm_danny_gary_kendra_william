@@ -1,11 +1,33 @@
-/* JUST FOR DEMO PURPORSES, REPLACE WITH YOUR OWN CODE */
-/* 
-#demo {
+* {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.searchForm {
+  height: 400px;
+  align-items: center;
+}
+
+#searchbar {
+  letter-spacing: 2px;
+  border-width: 2px;
+  text-shadow: 10px;
+  border-color: #4adbd8;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 400px;
+  padding: 10px;
+}
+
+
+/* #demo {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-} */
-
-/* END DEMO */
+}; */

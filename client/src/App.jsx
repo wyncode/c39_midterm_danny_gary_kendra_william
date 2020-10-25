@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-//import { AppContextProvider } from './context/AppContext';
-//import ContextDemo from './components/ContextDemo';
-
 import './App.css';
 import SearchForm from './components/SearchForm';
+//import SongBox from './components/SongBox'
+//import AboutBeatlesPages from './components/AboutBeatlesPage';
 
 const App = () => {
   const [serverMessage, setServerMessage] = useState('');
@@ -17,12 +16,11 @@ const App = () => {
   useEffect(fetchDemoData, []);
 
   return (
-    <div id="demo">
-      <h3>Hello</h3>
+    <div id="#">
+      <h3>Nav Bar Goes Here</h3>
       <SearchForm />
       <h3>{serverMessage}</h3>
     </div>
   );
 };
-
 export default App;
