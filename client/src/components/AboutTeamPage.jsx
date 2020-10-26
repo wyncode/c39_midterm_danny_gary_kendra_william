@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import Will from'./Will.jpg';
 
 const AboutTeamPage = () => {
     return (
@@ -15,9 +16,9 @@ const AboutTeamPage = () => {
             </div>
             <div>
                 <img style={{ 
-                    width: 100,
+                    width: 200,
                 }}
-                src={"#"} />
+                src={Will} />
             
                 <p>This should talk about the Team member 2</p>
             </div>
