@@ -3,12 +3,12 @@ import Card from 'react-bootstrap/Card';
 
 import '../App.css';
 
-const SongBox = ({ id, image, name }) => {
+const SongBox = (props) => {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img src="holder.js/100px270" alt="Album Cover" />
       <Card.ImgOverlay>
-        <Card.Title>Song Title</Card.Title>
+  <Card.Title>{props.title}</Card.Title>
         <Card.Subtitle className="album">Album Title</Card.Subtitle>
         <Card.Text>Some quick example text.</Card.Text>
         <Card.Link href="#">Guitar Link</Card.Link>
