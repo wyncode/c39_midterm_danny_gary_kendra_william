@@ -2,11 +2,13 @@
   margin: auto;
   padding: 10px;
   text-align: center;
+  background-color: blue;
 }
 
 .searchForm {
+  display: flex;
   height: 400px;
-  align-items: center;
+  justify-content: center;
 }
 
 #searchbar {
@@ -16,12 +18,10 @@
   border-color: #4adbd8;
   border-radius: 20px;
   background-color: white;
-  ;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 400px;
   padding: 10px;
 }
-
 
 /* #demo {
   width: 100vw;
