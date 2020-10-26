@@ -6,6 +6,8 @@ import Row from 'react-bootstrap/Row';
 import SongBox from './SongBox';
 import NavMenu from './NavMenu';
 import Slideshow from './Slideshow'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 const MainPage = () => {
   const [search, setSearch] = useState('someBeatleSong');
   const [apiData, setApiData] = useState({});
@@ -40,7 +42,7 @@ const MainPage = () => {
               <SongBox
                 key={songs.idSongs}
                 id={songs.idSongs}
-              />
+              />           
             );
           })}
       </Row>
