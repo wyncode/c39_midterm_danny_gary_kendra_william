@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 
+
 const AboutTeamPage = () => {
     return (
         <>
@@ -11,7 +12,9 @@ const AboutTeamPage = () => {
                 }}
                 src={"#"} />
             
-                <p>This should talk about the Team member 1</p>
+                <h5>Gary Chong-Qui</h5>
+                    <p>I enjoy developing websites and I'm anavocado aficionado!</p>
+    
             </div>
             <div>
                 <img style={{ 
