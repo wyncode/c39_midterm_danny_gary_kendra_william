@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import Gary from './images/gary.jpg';
 
 
 const AboutTeamPage = () => {
@@ -10,7 +11,7 @@ const AboutTeamPage = () => {
                 <img style={{ 
                     width: 100,
                 }}
-                src={"#"} />
+                src={Gary} />
             
                 <h5>Gary Chong-Qui</h5>
                     <p>I enjoy developing websites and I'm anavocado aficionado!</p>
