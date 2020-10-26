@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <div id="#">
-      <h3>Nav Bar Goes Here</h3>
+      <h3>Nav Bar Goes Here</h3>                   
       <SearchForm />
       <h3>{serverMessage}</h3>
     </div>
