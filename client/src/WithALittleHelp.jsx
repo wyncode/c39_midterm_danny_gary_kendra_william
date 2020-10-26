@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import NavMenu from './components/NavMenu';
 import Container from 'react-bootstrap/Container';
 import MainPage from './components/MainPage';
@@ -15,10 +15,12 @@ const WithALittleHelp = () => {
       <NavMenu/>
       <SearchForm/>
       <Container>
+        <Switch>
         <Route exact path="/" component={MainPage} />
         <Route exact path="/beatles" component={AboutBeatlesPage} />
         <Route exact path="/team" component={AboutTeamPage} /> 
         <Route exact path="/tabsheet" component={TabSheetTemplate} />
+        </Switch>
       </Container>
     </BrowserRouter>
   );
