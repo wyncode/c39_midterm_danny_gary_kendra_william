@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import SongBox from './SongBox';
 import NavMenu from './NavMenu';
 import Slideshow from './Slideshow'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 const MainPage = () => {
