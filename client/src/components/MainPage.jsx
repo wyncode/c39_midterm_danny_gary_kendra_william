@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import SearchForm from './SearchForm';
+// import SearchForm from './SearchForm';
 // import childComponent from './childComponent'; 
 import Row from 'react-bootstrap/Row';
 import SongBox from './SongBox';
-
+import NavMenu from './NavMenu';
+import Slideshow from './Slideshow'
 
 
 const MainPage = () => {
@@ -33,8 +34,9 @@ const MainPage = () => {
   }, [search]);
 
   return (
-    <div>
-     <SearchForm handleSubmitProp={handleSubmit} />
+    <>
+      {/* <SearchForm handleSubmitProp={handleSubmit} /> */}
+      <Slideshow/>
       <Row>
         {apiData.songs &&
           apiData.songs.map((songs) => {
@@ -48,9 +50,9 @@ const MainPage = () => {
             );
           })}
       </Row>
-    </div>
+
+    </>
   );
 }; 
- 
 
 export default MainPage;
