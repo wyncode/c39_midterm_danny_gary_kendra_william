@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 // import SearchForm from './SearchForm';
-// import childComponent from './childComponent'; 
+// import childComponent from './childComponent';
 import Row from 'react-bootstrap/Row';
 import SongBox from './SongBox';
 import NavMenu from './NavMenu';
-import Slideshow from './Slideshow'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import Slideshow from './Slideshow';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MainPage = () => {
   const [search, setSearch] = useState('someBeatleSong');
-  const [apiData, setApiData] = useState({});
+  const [apiData, setApiData] = useState(null);
   const handleSubmit = (event) => {
     event.preventDefault();
     // Take the value of the input box.
@@ -23,30 +23,29 @@ const MainPage = () => {
     console.log('useEffect?');
     const fetchData = async () => {
       let response = await axios.get(
-        `http://www.songsterr.com/a/ra/songs/byartists.json?artists=Beatles,${search} ` //need to confirm this api
+        `https://www.songsterr.com/a/ra/songs.json?pattern=Beatles` //need to confirm this api
       );
       // Save the fetch data into the apiData state var
       setApiData(response.data);
     };
     fetchData();
-  }, [search]);
+  }, []);
   return (
     <>
       {/* <SearchForm handleSubmitProp={handleSubmit} /> */}
-      <Slideshow/>
+      <Slideshow />
       <Row>
-        {apiData.songs &&
-          apiData.songs.map((songs) => {
+        {apiData &&
+          apiData.map((songs) => {
             console.log(songs);
             return (
-              <SongBox
-                key={songs.idSongs}
-                id={songs.idSongs}
-              />           
+              <div>
+                <SongBox key={songs.id} id={songs.id} title={songs.title} />
+              </div>
             );
           })}
       </Row>
     </>
   );
-}; 
+};
 export default MainPage;
