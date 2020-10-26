@@ -8,11 +8,9 @@ import NavMenu from './NavMenu';
 import Slideshow from './Slideshow'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-
 const MainPage = () => {
   const [search, setSearch] = useState('someBeatleSong');
   const [apiData, setApiData] = useState({});
-
   const handleSubmit = (event) => {
     event.preventDefault();
     // Take the value of the input box.
@@ -20,7 +18,6 @@ const MainPage = () => {
     // reminder: setSearch is the only way to change the search value.
     setSearch(event.target.elements.searchbar.value);
   };
-
   // This code only kicks in if "search" ever changes value.
   useEffect(() => {
     console.log('useEffect?');
@@ -33,7 +30,6 @@ const MainPage = () => {
     };
     fetchData();
   }, [search]);
-
   return (
     <>
       {/* <SearchForm handleSubmitProp={handleSubmit} /> */}
@@ -47,13 +43,10 @@ const MainPage = () => {
                 key={songs.idSongs}
                 id={songs.idSongs}
               />
-            
             );
           })}
       </Row>
-
     </>
   );
 }; 
-
 export default MainPage;
