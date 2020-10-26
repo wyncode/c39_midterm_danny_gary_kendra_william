@@ -8,6 +8,7 @@ import NavMenu from './NavMenu';
 import Slideshow from './Slideshow';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 const MainPage = () => {
   const [search, setSearch] = useState('someBeatleSong');
   const [apiData, setApiData] = useState(null);
