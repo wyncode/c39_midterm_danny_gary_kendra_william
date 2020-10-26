@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 
-const BeatlesInfoPage = () => {
-    return 
-        <>
+const AboutBeatlesPage = () => {
+    return <>
             {/*This is the About Beatles Page */}
             <h1> This is all about the Beatles! </h1>
             <p>
@@ -20,4 +19,4 @@ const BeatlesInfoPage = () => {
         </>
 };
 
-export default BeatlesInfoPage;
+export default AboutBeatlesPage;

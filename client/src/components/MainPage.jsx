@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
-// import SearchForm from './SearchForm';
+import SearchForm from './SearchForm';
 // import childComponent from './childComponent'; 
-// import Row from 'react-bootstrap/Row';
+import Row from 'react-bootstrap/Row';
+import SongBox from './SongBox';
+
 
 
 const MainPage = () => {
@@ -32,24 +33,24 @@ const MainPage = () => {
   }, [search]);
 
   return (
-    <>
-      {/* <SearchForm handleSubmitProp={handleSubmit} />
+    <div>
+     <SearchForm handleSubmitProp={handleSubmit} />
       <Row>
-        {/* {apiData.songs &&
+        {apiData.songs &&
           apiData.songs.map((songs) => {
             console.log(songs);
             return (
-              <Recipe
+              <SongBox
                 key={songs.idSongs}
                 id={songs.idSongs}
-                image={songs.strMealThumb}
-                name={meal.strMeal} /> */}
+              />
             
-            {/* );
+            );
           })}
-      </Row> */}
-    </>
+      </Row>
+    </div>
   );
 }; 
+ 
 
 export default MainPage;
