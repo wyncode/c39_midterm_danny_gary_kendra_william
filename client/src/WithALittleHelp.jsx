@@ -6,14 +6,12 @@ import MainPage from './components/MainPage';
 import AboutBeatlesPage from './components/AboutBeatlesPage';
 import AboutTeamPage from './components/AboutTeamPage';
 import TabSheetTemplate from './components/TabSheetTemplate';
-import SearchForm from './components/SearchForm';
 
 
 const WithALittleHelp = () => {
   return (
     <BrowserRouter>
       <NavMenu/>
-      <SearchForm/>
       <Container>
         <Switch>
         <Route exact path="/" component={MainPage} />
