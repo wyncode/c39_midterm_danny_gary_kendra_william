@@ -7,7 +7,7 @@ const AboutBeatlesPage = () => {
             <h1> This is all about the Beatles! </h1>
             <p>
                 <img style={{ 
-                    width: 200,
+                    width: 500,
                     float: "left",
                     margin: "0 2rem 2rem 0"
                 }}

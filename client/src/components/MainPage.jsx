@@ -27,7 +27,9 @@ const MainPage = () => {
   );
   return (
     <>
+    <div className="searchbar">
       <SearchForm search={search} onChange={handleChange} />
+    </div>
       <Slideshow />
       <Row>
         {filteredSongs.map((song) => {
