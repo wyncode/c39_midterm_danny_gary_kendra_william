@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import NavMenu from './components/NavMenu';
 import Container from 'react-bootstrap/Container';

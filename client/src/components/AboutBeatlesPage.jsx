@@ -5,13 +5,13 @@ const AboutBeatlesPage = () => {
   return (
     <>
       {/*This is the About Beatles Page */}
-      <h1> This is all about the Beatles! </h1>
+      <h1 className="aboutTitle"> One of the Worlds Most Iconic Bands</h1>
       <p>
         <img
           style={{
-            width: 200,
+            width: 300,
             float: 'left',
-            margin: '0 2rem 2rem 0'
+            margin: '1rem  1rem 1rem 0'
           }}
           src={
             'https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg'

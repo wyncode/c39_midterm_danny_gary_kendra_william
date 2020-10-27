@@ -2,8 +2,8 @@
   display: auto;
   margin: auto;
   justify-content: auto;
-  text-align: center;
-
+  text-align: justify;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .nav {
@@ -15,21 +15,24 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-;
-
 #searchbar {
-  margin: auto;
+  margin: 20px;
   letter-spacing: 2px;
-  border-width: 6px;
+  border-width: 4px;
   border-color: #4adbd8;
   border-radius: 40px;
-  background-color: #4adbd8;
+  background-color: rgb(245, 245, 245);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 80vw;
-  padding: 10px;
+  padding: 20px;
+  font-size: 75%;
 }
 
-container {
-  display: auto;
-  justify-content: c;
+
+.aboutTitle {
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 5%;
 }
+/* .row {
+
+} */
