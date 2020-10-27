@@ -1,8 +1,10 @@
+/*ABOUT THE BEATLES STYLING*/
 * {
   display: auto;
   margin: auto;
   justify-content: auto;
   text-align: justify;
+  background-color: black;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
@@ -22,17 +24,21 @@
   border-color: #4adbd8;
   border-radius: 40px;
   background-color: rgb(245, 245, 245);
+  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px;
   font-size: 75%;
 }
 
-
+/*ABOUT THE BEATLES STYLING*/
 .aboutTitle {
-text-align: center;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-margin: 5%;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 5%;
 }
-/* .row {
-
-} */
+.footerLinksBeatles {
+  display: grid;
+  margin: 4px;
+  align-items: center;
+  text-align: center;
+}

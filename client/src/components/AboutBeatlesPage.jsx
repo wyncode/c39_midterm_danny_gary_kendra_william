@@ -75,7 +75,7 @@ const AboutBeatlesPage = () => {
           in 1988, and all four were inducted individually from 1994 to 2015.
         </p>
       </div>
-      <div>
+      <div className="footerLinksBeatles">
         <a href={'https://www.thebeatles.com/'}>Beatles Official Page</a>
         <a
           href={
