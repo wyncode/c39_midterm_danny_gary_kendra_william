@@ -1,15 +1,14 @@
 * {
+  color: whitesmoke;
   margin: auto;
   padding: 10px;
   text-align: center;
-  background-color: grey;
+  background-color: #1c1c1b;
 }
-
+/* 
 .searchForm {
-  display: flex;
   height: 400px;
-  justify-content: center;
-}
+} */
 
 #searchbar {
   letter-spacing: 2px;
@@ -23,10 +22,7 @@
   padding: 10px;
 }
 
-/* #demo {
-  width: 100vw;
-  height: 100vh;
+.searchbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}; */
+  justify-content: center;
+}

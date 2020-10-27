@@ -1,9 +1,9 @@
 import React from 'react';
 import '../App.css';
 
-import Will from './Will.jpg';
-
-import Gary from './images/gary.jpg';
+import Will from './images/Will.jpg';
+import Danny from './images/Danny.jpg';
+import Gary from './images/Gary.jpg';
 
 const AboutTeamPage = () => {
     return (
@@ -16,7 +16,7 @@ const AboutTeamPage = () => {
                 src={Gary} />
             
                 <h5>Gary Chong-Qui</h5>
-                    <p>I enjoy developing websites and I'm anavocado aficionado!</p>
+                    <p>I enjoy developing websites and I'm an avocado aficionado!</p>
     
             </div>
             <div>
@@ -30,11 +30,12 @@ const AboutTeamPage = () => {
             </div>
             <div>
                 <img style={{
-                    width: 100,
+                    width: 250
+                ,
                 }}
-                src={"#"} />
+                src={Danny} />
             
-                <p>This should talk about the Team member 3</p>
+                <p>I always enjoy a great laugh and a new adventure!</p>
             </div>
             <div>
                 <img style={{ 

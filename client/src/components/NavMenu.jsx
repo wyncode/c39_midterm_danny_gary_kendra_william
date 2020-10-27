@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 
 const NavMenu = () => {
   return (    
-    <Nav class="nav" activeKey="/" style={{ backgroundColor: 'blue' }} as="ul">
+    <Nav class="nav" activeKey="/" style={{ backgroundColor: '#1c1c1b' }} as="ul">
       <Nav.Item as="li">
         <Nav.Link style={{ color: 'white' }} href="/">
           Home
