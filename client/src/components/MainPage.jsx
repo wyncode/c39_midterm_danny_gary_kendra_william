@@ -1,29 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-// import SearchForm from './SearchForm';
-// import childComponent from './childComponent';
+import SearchForm from './SearchForm';
 import Row from 'react-bootstrap/Row';
 import SongBox from './SongBox';
-import NavMenu from './NavMenu';
 import Slideshow from './Slideshow';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 const MainPage = () => {
-  const [search, setSearch] = useState('someBeatleSong');
-  const [apiData, setApiData] = useState(null);
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Take the value of the input box.
-    console.log(event.target.elements.searchbar.value);
-    // reminder: setSearch is the only way to change the search value.
-    setSearch(event.target.elements.searchbar.value);
+  const [search, setSearch] = useState('');
+  const [apiData, setApiData] = useState([]);
+  const handleChange = (event) => {
+    setSearch(event.target.value);
   };
   // This code only kicks in if "search" ever changes value.
   useEffect(() => {
-    console.log('useEffect?');
     const fetchData = async () => {
-      let response = await axios.get(
+      const response = await axios.get(
         `https://www.songsterr.com/a/ra/songs.json?pattern=Beatles` //need to confirm this api
       );
       // Save the fetch data into the apiData state var
@@ -31,20 +22,21 @@ const MainPage = () => {
     };
     fetchData();
   }, []);
+  const filteredSongs = apiData.filter((song) =>
+    song.title.toLowerCase().includes(search)
+  );
   return (
     <>
-      {/* <SearchForm handleSubmitProp={handleSubmit} /> */}
+      <SearchForm search={search} onChange={handleChange} />
       <Slideshow />
       <Row>
-        {apiData &&
-          apiData.map((songs) => {
-            console.log(songs);
-            return (
-              <div>
-                <SongBox key={songs.id} id={songs.id} title={songs.title} />
-              </div>
-            );
-          })}
+        {filteredSongs.map((song) => {
+          return (
+            <div>
+              <SongBox key={song.id} id={song.id} title={song.title} />
+            </div>
+          );
+        })}
       </Row>
     </>
   );
