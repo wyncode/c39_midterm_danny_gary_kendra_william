@@ -35,7 +35,6 @@ const MainPage = () => {
       </div>
       <Row>
         {filteredSongs.slice(0, 9).map((song) => {
-          console.log(song.id);
           return (
             <div>
               <SongBox key={song.id} id={song.id} title={song.title} />
