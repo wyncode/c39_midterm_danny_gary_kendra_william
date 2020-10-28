@@ -11,7 +11,7 @@ const AboutBeatlesPage = () => {
       <p>
         <img
           style={{
-            width: 300,
+            width: 500,
             float: 'left',
             margin: '1rem  1rem 1rem 0'
           }}
