@@ -34,7 +34,7 @@ const MainPage = () => {
     </div>
       <Slideshow />
       <Row>
-        {filteredSongs.map((song) => {
+        {filteredSongs.slice(0, 9).map((song) => {
           console.log(song.id);
           return (         
             <div>
@@ -48,34 +48,3 @@ const MainPage = () => {
   );
 };
 export default MainPage;
-
-
-
-
-
-
-
-//TRYING TO ADD SECOND API
-// const MainPage = () => {
-//   const [search, setSearch] = useState('');
-//   const [tabPage, setTabPage] = useState([]);
-
-//   const fetchData = () => {
-//     const songAPI = 'https://www.songsterr.com/a/ra/songs.json?pattern=Beatles';
-//     const tabPage = 'http://www.songsterr.com/a/wa/bestMatchForQueryString?s={song title}&a={artist name}';
-//   }
-
-//   const getSearch = axios.get(search)
-//   const getTabPage = axios.get(tabPage)
-//   axios.all([getSearch, getTabPage]).then( 
-//     axios.spread((...allData) => {
-//       const allDataPlayer = allData [0]
-//       const getTabInfo = allData [1]
-
-//       console.log()
-
-//     }
-//   ))
-// };
-
-// export default MainPage;
