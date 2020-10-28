@@ -2,11 +2,13 @@ import React from 'react';
 import Will from './images/Will.jpg';
 import Danny from './images/Danny.jpg';
 import Gary from './images/gary.jpg';
+import Kendra from './images/Kendra.jpg';
+import '../App.css';
 
 const AboutTeamPage = () => {
   return (
-    <>
-      <h1> This is all about the Team! </h1>
+    <div className="fabFour">
+      <h1> The Fab Four </h1>
       <div>
         <img
           style={{
@@ -58,7 +60,7 @@ const AboutTeamPage = () => {
           working as a Software Engineer in Robotics for Neuralink.
         </p>
       </div>
-    </>
+    </div>
   );
 };
 
