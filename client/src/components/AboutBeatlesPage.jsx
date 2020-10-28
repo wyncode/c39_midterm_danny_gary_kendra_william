@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import BeatlesPhoto from './images/BeatlesPhoto.jpg';
 
 const AboutBeatlesPage = () => {
 
@@ -14,9 +15,7 @@ const AboutBeatlesPage = () => {
             float: 'left',
             margin: '1rem  1rem 1rem 0'
           }}
-          src={
-            'https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg'
-          }
+          src={BeatlesPhoto}
           alt={'The Beatles'}
         />
       </p>
