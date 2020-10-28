@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 
 const AboutBeatlesPage = () => {
+
   return (
     <>
       {/*This is the About Beatles Page */}

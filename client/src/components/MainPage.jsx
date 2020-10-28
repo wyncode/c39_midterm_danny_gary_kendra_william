@@ -16,7 +16,7 @@ const MainPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        `https://www.songsterr.com/a/ra/songs.json?pattern=Beatles` //need to confirm this api
+        `http://www.songsterr.com/a/ra/songs/byartists.json?artists=beatles` //need to confirm this api
       );
       // Save the fetch data into the apiData state var
       setApiData(response.data);
@@ -26,20 +26,25 @@ const MainPage = () => {
   const filteredSongs = apiData.filter((song) =>
     song.title.toLowerCase().includes(search)
   );
+ 
   return (
     <>
+    <div className="searchbar">
       <SearchForm search={search} onChange={handleChange} />
+    </div>
       <Slideshow />
       <Row>
         {filteredSongs.map((song) => {
-          return (
+          console.log(song.id);
+          return (         
             <div>
-              <SongBox key={song.id} id={song.id} title={song.title} />
+              <SongBox key={song.id} id={song.id} title={song.title} />             
             </div>
           );
         })}
       </Row>
     </>
+
   );
 };
 export default MainPage;

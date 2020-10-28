@@ -5,7 +5,6 @@ import Container from 'react-bootstrap/Container';
 import MainPage from './components/MainPage';
 import AboutBeatlesPage from './components/AboutBeatlesPage';
 import AboutTeamPage from './components/AboutTeamPage';
-import TabSheetTemplate from './components/TabSheetTemplate';
 
 const WithALittleHelp = () => {
   return (
@@ -13,10 +12,9 @@ const WithALittleHelp = () => {
       <NavMenu />
       <Container>
         <Switch>
-          <Route exact path="/" component={MainPage} />
-          <Route exact path="/beatles" component={AboutBeatlesPage} />
-          <Route exact path="/team" component={AboutTeamPage} />
-          <Route exact path="/tabsheet" component={TabSheetTemplate} />
+        <Route exact path="/" component={MainPage} />
+        <Route exact path="/beatles" component={AboutBeatlesPage} />
+        <Route exact path="/team" component={AboutTeamPage} /> 
         </Switch>
       </Container>
     </BrowserRouter>
