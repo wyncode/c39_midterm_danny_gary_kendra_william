@@ -1,13 +1,13 @@
 /*ABOUT THE BEATLES STYLING*/
-* {
+/* * {
 
   display: auto;
   margin: auto;
   justify-content: auto;
   text-align: justify;
   background-color: black;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-}
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
 
 .nav {
   width: 100vw;
@@ -17,7 +17,7 @@
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+* {
   color: whitesmoke;
   margin: auto;
   padding: 10px;
@@ -28,7 +28,6 @@
 .searchForm {
   height: 400px;
 } */
-
 
 #searchbar {
   margin: 20px;
@@ -46,7 +45,8 @@
 /*ABOUT THE BEATLES STYLING*/
 .aboutTitle {
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 5%;
 }
 .footerLinksBeatles {
@@ -60,4 +60,3 @@
   display: flex;
   justify-content: center;
 }
-

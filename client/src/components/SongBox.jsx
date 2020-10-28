@@ -8,23 +8,14 @@ const SongBox = (props) => {
   console.log(id);
   return (   
     <Card style={{ width: '18rem' }}>
-      <Card.Img src="holder.js/100px270" alt="Album Cover" />
-      <Card.Title>{props.title}</Card.Title>
-      <Card.Subtitle className="album">Album Title</Card.Subtitle>
-      <div>
-        <Card.Link href="#">Guitar</Card.Link>
-        <Card.Link href="#">Bass</Card.Link>
-        <Card.Link href="#">Drum</Card.Link>
-      </div>
-
-  <Card.Title>{props.title}</Card.Title>
-        <Card.Subtitle className="album">Album Title</Card.Subtitle>
-        <div>
-          <Card.Link href={`http://www.songsterr.com/a/wa/song?id=${props.id}`}>Learn To Play This Song!</Card.Link>
+      <Card.Img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/3970/production/_108240741_beatles-abbeyroad-square-reuters-applecorps.jpg" alt="Album Cover" />
+        <Card.ImgOverlay className='albumCover' style={{ opacity: .7 }}>
+        <div >
+          <Card.Title >{props.title} </Card.Title>
+          <Card.Link className='Play' href={`http://www.songsterr.com/a/wa/song?id=${props.id}`}>Learn To Play This Song!</Card.Link>
         </div>
-
+      </Card.ImgOverlay>
     </Card>
   );
 };
-
 export default SongBox;
