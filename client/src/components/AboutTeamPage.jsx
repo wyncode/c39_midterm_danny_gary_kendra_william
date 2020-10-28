@@ -1,5 +1,7 @@
+import React from 'react';
+import Will from './images/Will.jpg';
 import Danny from './images/Danny.jpg';
-import Gary from './images/Gary.jpg';
+import Gary from './images/gary.jpg';
 
 const AboutTeamPage = () => {
     return (
@@ -7,7 +9,7 @@ const AboutTeamPage = () => {
             <h1> This is all about the Team! </h1>
             <div>
                 <img style={{ 
-                    width: 100,
+                    width: 200,
                 }}
                 src={Gary} />
             
@@ -26,7 +28,7 @@ const AboutTeamPage = () => {
             </div>
             <div>
                 <img style={{
-                    width: 250
+                    width: 240
                 ,
                 }}
                 src={Danny} />

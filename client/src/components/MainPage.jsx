@@ -34,7 +34,7 @@ const MainPage = () => {
     </div>
       <Slideshow />
       <Row>
-        {filteredSongs.map((song) => {
+        {filteredSongs.slice(0, 9).map((song) => {
           console.log(song.id);
           return (         
             <div>
