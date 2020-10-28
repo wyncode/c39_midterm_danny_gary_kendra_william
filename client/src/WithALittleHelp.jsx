@@ -6,11 +6,10 @@ import MainPage from './components/MainPage';
 import AboutBeatlesPage from './components/AboutBeatlesPage';
 import AboutTeamPage from './components/AboutTeamPage';
 
-
 const WithALittleHelp = () => {
   return (
     <BrowserRouter>
-      <NavMenu/>
+      <NavMenu />
       <Container>
         <Switch>
         <Route exact path="/" component={MainPage} />
@@ -22,4 +21,3 @@ const WithALittleHelp = () => {
   );
 };
 export default WithALittleHelp;
-

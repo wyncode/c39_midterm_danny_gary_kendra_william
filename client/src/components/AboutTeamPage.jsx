@@ -1,7 +1,3 @@
-import React from 'react';
-import '../App.css';
-
-import Will from './images/Will.jpg';
 import Danny from './images/Danny.jpg';
 import Gary from './images/Gary.jpg';
 
@@ -43,10 +39,11 @@ const AboutTeamPage = () => {
                 }}
                 src={"#"} />
             
-                <p>This should talk about the Team member 4</p>
+                <p>Kendras Section</p>
             </div>
         </>
     )
+
 };
 
 export default AboutTeamPage;

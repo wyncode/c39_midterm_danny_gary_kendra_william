@@ -7,7 +7,6 @@ import SearchForm from './components/SearchForm';
 //import SongBox from './components/SongBox'
 //import MainPage from './components/MainPage';
 
-
 const App = () => {
   const [serverMessage, setServerMessage] = useState('');
 
@@ -21,7 +20,7 @@ const App = () => {
 
   return (
     <div id="#">
-      <h3>Nav Bar Goes Here</h3>                   
+      <h3>Nav Bar Goes Here</h3>
       <SearchForm />
       <h3>{serverMessage}</h3>
     </div>

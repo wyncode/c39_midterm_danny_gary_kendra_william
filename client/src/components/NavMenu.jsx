@@ -2,8 +2,8 @@ import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 
 const NavMenu = () => {
-  return (    
-    <Nav class="nav" activeKey="/" style={{ backgroundColor: '#1c1c1b' }} as="ul">
+  return (
+    <Nav class="nav" activeKey="/" style={{ backgroundColor: 'black' }} as="ul">
       <Nav.Item as="li">
         <Nav.Link style={{ color: 'white' }} href="/">
           Home
@@ -18,7 +18,7 @@ const NavMenu = () => {
         <Nav.Link style={{ color: 'white' }} href="/team">
           About Us
         </Nav.Link>
-      </Nav.Item>    
+      </Nav.Item>
     </Nav>
   );
 };
