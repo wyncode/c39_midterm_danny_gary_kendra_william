@@ -2,11 +2,12 @@ import React from 'react';
 import Will from './images/Will.jpg';
 import Danny from './images/Danny.jpg';
 import Gary from './images/gary.jpg';
+import Kendra from './images/Kendra.jpg';
 
 const AboutTeamPage = () => {
   return (
     <>
-      <h1> This is all about the Team! </h1>
+      <h1> The Fab Four </h1>
       <div>
         <img
           style={{
