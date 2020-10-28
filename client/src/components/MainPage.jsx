@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import SearchForm from './SearchForm';
-import Row from 'react-bootstrap/Row';
 import SongBox from './SongBox';
 import Slideshow from './Slideshow';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,13 +31,17 @@ console.log(filteredSongs);
       <Slideshow />
       <div className="searchbar">
         <SearchForm search={search} onChange={handleChange} />
+        <h1>Hello</h1>
       </div>     
       <div className="row">
         {filteredSongs.slice(0, 9).map((song) => {
           return (
+            <>
+            <h1>HelloAgain</h1>
             <div>
               <SongBox key={song.id} id={song.id} title={song.title} />
             </div>
+           </>
           );
         })}
       </div>
