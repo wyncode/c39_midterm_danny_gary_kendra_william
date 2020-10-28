@@ -29,9 +29,6 @@ const MainPage = () => {
 
   return (
     <>
-      <div className="searchbar">
-        <SearchForm search={search} onChange={handleChange} />
-      </div>
       <Slideshow />
       <div className="searchbar">
         <SearchForm search={search} onChange={handleChange} />

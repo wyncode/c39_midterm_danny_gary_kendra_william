@@ -1,13 +1,9 @@
 import React from 'react';
 import Will from './images/Will.jpg';
 import Danny from './images/Danny.jpg';
-<<<<<<< HEAD
-import Gary from './images/gary.jpeg';
-=======
 import Gary from './images/Gary.jpg';
 import Kendra from './images/Kendra.jpg';
 import '../App.css';
->>>>>>> 313539209b8819e1340545cec8c6f0038661b032
 
 const AboutTeamPage = () => {
   return (
