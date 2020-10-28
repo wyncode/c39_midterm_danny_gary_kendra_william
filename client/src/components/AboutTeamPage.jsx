@@ -1,7 +1,7 @@
 import React from 'react';
 import Will from './images/Will.jpg';
 import Danny from './images/Danny.jpg';
-import Gary from './images/Gary.jpg';
+
 
 const AboutTeamPage = () => {
     return (
@@ -11,7 +11,7 @@ const AboutTeamPage = () => {
                 <img style={{ 
                     width: 100,
                 }}
-                src={Gary} />
+                src={""} />
             
                 <h5>Gary Chong-Qui</h5>
                     <p>I enjoy developing websites and I'm an avocado aficionado!</p>
