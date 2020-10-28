@@ -5,21 +5,20 @@
   justify-content: auto;
   text-align: justify;
   color: whitesmoke;
-  margin: auto;
   padding: 10px;
   text-align: center;
   background-color: #353E4B;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
-/* .nav {
-  width: 100vw;
-  height: 8vh;
-  display: flex;
-  justify-content: space-between;
+.nav {
+  /* height: 8vh; */
+  display: auto;
+  justify-content: auto;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} */
+}
+
 .album {
   margin: auto;
   padding: 10px;
@@ -27,13 +26,13 @@
   background-color: #353E4B;
   opacity: .7;
 }
-/* 
+
+/* SEARCH FORM STYLING */
 .searchForm {
   height: 400px;
-} */
+}
 
-
-#searchbar {
+*/ #searchbar {
   margin: 20px;
   letter-spacing: 2px;
   border-width: 4px;
@@ -52,6 +51,7 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 5%;
 }
+
 .footerLinksBeatles {
   display: grid;
   margin: 4px;
@@ -63,9 +63,11 @@
   display: flex;
   justify-content: center;
 }
+
 .Play {
   opacity: 0;
 }
+
 /* .Play:hover {
   opacity: 1;
   color: yellow;
