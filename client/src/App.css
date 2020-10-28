@@ -8,23 +8,23 @@
   margin: auto;
   padding: 10px;
   text-align: center;
-  background-color: #1c1c1b;
+  background-color: #353E4B;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
-.nav {
+/* .nav {
   width: 100vw;
   height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 .album {
   margin: auto;
   padding: 10px;
   text-align: center;
-  background-color: #1c1c1b;
+  background-color: #353E4B;
   opacity: .7;
 }
 /* 
@@ -79,4 +79,15 @@
   opacity: 1;
   color: yellow;
 
+}
+
+.help{
+  color: yellow;
+}
+
+.logo{
+ 
+  height: 70px;
+  width: 70px;
+  
 }
