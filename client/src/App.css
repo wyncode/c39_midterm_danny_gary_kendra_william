@@ -1,68 +1,48 @@
-/*ABOUT THE BEATLES STYLING*/
+/*MAIN*/
 * {
   display: auto;
   margin: auto;
   justify-content: auto;
   text-align: justify;
   color: whitesmoke;
-  margin: auto;
   padding: 10px;
   text-align: center;
-  background-color: #1c1c1b;
+  background-color: #353e4b;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
-
+/*NAV BAR*/
 .nav {
-  width: 100vw;
-  height: 8vh;
-  display: flex;
-  justify-content: space-between;
+  /* height: 8vh; */
+  display: auto;
+  justify-content: auto;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*ALBUM SLIDESHOW*/
 .album {
   margin: auto;
   padding: 10px;
   text-align: center;
-  background-color: #1c1c1b;
+  background-color: #353e4b;
   opacity: 0.7;
 }
-/* 
+/* SEARCH BAR*/
 .searchForm {
   height: 400px;
-} */
-
+}
 #searchbar {
+  display: flex;
   margin: 20px;
   letter-spacing: 2px;
-  border-width: 4px;
-  border-color: #4adbd8;
-  border-radius: 40px;
+  border-width: 2px;
+  border-radius: 50px;
   background-color: rgb(245, 245, 245);
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 20px;
   font-size: 75%;
-}
-
-/*ABOUT THE BEATLES STYLING*/
-.aboutTitle {
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 5%;
-}
-.footerLinksBeatles {
-  display: grid;
-  margin: 4px;
-  align-items: center;
-  text-align: center;
-}
-
-.searchbar {
-  display: flex;
   justify-content: center;
 }
+/*SONG BOX*/
 .Play {
   opacity: 0;
 }
@@ -74,8 +54,26 @@
   height: 240px;
   width: 250px;
 }
-
 .whatever:hover a {
   opacity: 1;
   color: yellow;
+}
+/*ABOUT THE BEATLES*/
+.aboutTitle {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 5%;
+}
+
+.footerLinksBeatles {
+  display: grid;
+  margin: 4px;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  height: 70px;
+  width: 70px;
 }
