@@ -26,13 +26,6 @@ const Slideshow = () => {
         />
       </Carousel.Item>
     </Carousel>
-
-      // <Carousel>
-      //     <Carousel.image>
-      //     <img src="http://www.quickmeme.com/img/d2/d2a55033bd85f86fdb077fc6f1fb54db0d4543d2c1951a6b174a15d650c8ad90.jpg"></img>
-      //     <img src="https://i.chzbgr.com/full/5251147264/h14AB39BA/not-sure-of-no-antivirus-or-avg-still-working"></img>
-      //     </Carousel.image>
-      // </Carousel>
   );
 };
 
