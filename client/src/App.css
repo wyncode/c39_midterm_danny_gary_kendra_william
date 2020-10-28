@@ -82,3 +82,7 @@
   opacity: 1;
   color: yellow;
 }
+
+@media (prefers-color-scheme: dark) {
+
+}

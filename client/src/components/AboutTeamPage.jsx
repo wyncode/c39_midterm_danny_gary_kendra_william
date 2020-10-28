@@ -3,6 +3,7 @@ import Will from './images/Will.jpg';
 import Danny from './images/Danny.jpg';
 import Gary from './images/gary.jpg';
 import Kendra from './images/Kendra.jpg';
+import '../App.css';
 
 const AboutTeamPage = () => {
   return (
