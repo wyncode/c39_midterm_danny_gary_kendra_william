@@ -29,10 +29,10 @@ const MainPage = () => {
  
   return (
     <>
-    <div className="searchbar">
-      <SearchForm search={search} onChange={handleChange} />
-    </div>
       <Slideshow />
+      <div className="searchbar">
+        <SearchForm search={search} onChange={handleChange} />
+      </div>
       <Row>
         {filteredSongs.slice(0, 9).map((song) => {
           console.log(song.id);
