@@ -1,11 +1,7 @@
 import React from 'react';
 import Will from './images/Will.jpg';
 import Danny from './images/Danny.jpg';
-<<<<<<< HEAD
-
-=======
 import Gary from './images/gary.jpg';
->>>>>>> e45067c28e52cd47064786ff6465802e3197c096
 
 const AboutTeamPage = () => {
     return (
