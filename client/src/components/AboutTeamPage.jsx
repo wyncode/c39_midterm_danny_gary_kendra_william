@@ -7,7 +7,7 @@ import '../App.css';
 
 const AboutTeamPage = () => {
   return (
-    <>
+    <div className="fabFour">
       <h1> The Fab Four </h1>
       <div>
         <img
@@ -60,7 +60,7 @@ const AboutTeamPage = () => {
           working as a Software Engineer in Robotics for Neuralink.
         </p>
       </div>
-    </>
+    </div>
   );
 };
 

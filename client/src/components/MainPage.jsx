@@ -26,25 +26,24 @@ const MainPage = () => {
   const filteredSongs = apiData.filter((song) =>
     song.title.toLowerCase().includes(search)
   );
- 
+
   return (
     <>
-    <div className="searchbar">
-      <SearchForm search={search} onChange={handleChange} />
-    </div>
+      <div className="searchbar">
+        <SearchForm search={search} onChange={handleChange} />
+      </div>
       <Slideshow />
       <Row>
         {filteredSongs.slice(0, 9).map((song) => {
           console.log(song.id);
-          return (         
+          return (
             <div>
-              <SongBox key={song.id} id={song.id} title={song.title} />             
+              <SongBox key={song.id} id={song.id} title={song.title} />
             </div>
           );
         })}
       </Row>
     </>
-
   );
 };
 export default MainPage;
