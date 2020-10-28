@@ -1,4 +1,4 @@
-/*ABOUT THE BEATLES STYLING*/
+/*MAIN*/
 * {
   display: auto;
   margin: auto;
@@ -10,7 +10,7 @@
   background-color: #353E4B;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
-
+/*NAV BAR*/
 .nav {
   /* height: 8vh; */
   display: auto;
@@ -18,37 +18,52 @@
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/*ALBUM SLIDESHOW*/
 .album {
   margin: auto;
   padding: 10px;
   text-align: center;
   background-color: #353E4B;
   opacity: .7;
-}
 
-/* SEARCH FORM STYLING */
+}
+/* SEARCH BAR*/
 .searchForm {
   height: 400px;
 }
-
-*/ #searchbar {
+#searchbar {
+  display: flex;
   margin: 20px;
   letter-spacing: 2px;
-  border-width: 4px;
-  border-color: #4adbd8;
-  border-radius: 40px;
+  border-width: 2px;
+  border-radius: 50px;
   background-color: rgb(245, 245, 245);
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 20px;
   font-size: 75%;
+  justify-content: center;
 }
-
-/*ABOUT THE BEATLES STYLING*/
+/*SONG BOX*/
+.Play {
+  opacity: 0;
+}
+/* .Play:hover {
+  opacity: 1;
+  color: yellow;
+} */
+.whatever {
+  height: 240px;
+  width: 250px;
+}
+.whatever:hover a {
+  opacity: 1;
+  color: yellow;
+}
+/*ABOUT THE BEATLES*/
 .aboutTitle {
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 5%;
 }
 
@@ -59,33 +74,6 @@
   text-align: center;
 }
 
-.searchbar {
-  display: flex;
-  justify-content: center;
-}
-
-.Play {
-  opacity: 0;
-}
-
-/* .Play:hover {
-  opacity: 1;
-  color: yellow;
-} */
-.whatever {
-  height: 240px;
-  width: 250px;
-}
-
-.whatever:hover a {
-  opacity: 1;
-  color: yellow;
-
-}
-
-.help{
-  color: yellow;
-}
 
 .logo{
  
@@ -93,3 +81,4 @@
   width: 70px;
   
 }
+
