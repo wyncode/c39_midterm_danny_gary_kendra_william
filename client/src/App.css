@@ -1,11 +1,14 @@
 /*ABOUT THE BEATLES STYLING*/
 * {
-
   display: auto;
   margin: auto;
   justify-content: auto;
   text-align: justify;
-  background-color: black;
+  color: whitesmoke;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #1c1c1b;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
@@ -17,12 +20,12 @@
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-  color: whitesmoke;
+.album {
   margin: auto;
   padding: 10px;
   text-align: center;
   background-color: #1c1c1b;
+  opacity: .7;
 }
 /* 
 .searchForm {
@@ -60,4 +63,20 @@
   display: flex;
   justify-content: center;
 }
+.Play {
+  opacity: 0;
+}
+/* .Play:hover {
+  opacity: 1;
+  color: yellow;
+} */
+.whatever {
+  height: 240px;
+  width: 250px;
+}
 
+.whatever:hover a {
+  opacity: 1;
+  color: yellow;
+
+}
