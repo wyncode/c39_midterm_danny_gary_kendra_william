@@ -32,8 +32,8 @@ console.log(filteredSongs);
       <Slideshow />
       <div className="searchbar">
         <SearchForm search={search} onChange={handleChange} />
-      </div>
-      <Row>
+      </div>     
+      <div className="row">
         {filteredSongs.slice(0, 9).map((song) => {
           return (
             <div>
@@ -41,7 +41,7 @@ console.log(filteredSongs);
             </div>
           );
         })}
-      </Row>
+      </div>
     </>
   );
 };
