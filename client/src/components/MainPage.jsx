@@ -25,12 +25,16 @@ const MainPage = () => {
   const filteredSongs = apiData.filter((song) =>
     song.title.toLowerCase().includes(search)
   );
+<<<<<<< HEAD
 console.log(filteredSongs);
+=======
+>>>>>>> cdefef8bcb1cae8256983f7fb9155ae3727f1603
   return (
     <>
       <Slideshow />
       <div className="searchbar">
         <SearchForm search={search} onChange={handleChange} />
+<<<<<<< HEAD
         <h1>Hello</h1>
       </div>     
       <div className="row">
@@ -45,6 +49,16 @@ console.log(filteredSongs);
           );
         })}
       </div>
+=======
+      </div>
+      <Row>
+        {filteredSongs.slice(0, 9).map((song) => (
+          <div key={song.id}>
+            <SongBox id={song.id} title={song.title} />
+          </div>
+        ))}
+      </Row>
+>>>>>>> cdefef8bcb1cae8256983f7fb9155ae3727f1603
     </>
   );
 };

@@ -12,7 +12,8 @@
 }
 /*NAV BAR*/
 .nav {
-  /* height: 8vh; */
+  height: 8vh;
+  display: flex;
   display: auto;
   justify-content: auto;
   align-items: center;
@@ -46,15 +47,14 @@
 .Play {
   opacity: 0;
 }
-/* .Play:hover {
-  opacity: 1;
-  color: yellow;
-} */
-.whatever {
+
+
+.PlayLink {
   height: 240px;
   width: 250px;
 }
-.whatever:hover a {
+
+.PlayLink:hover a {
   opacity: 1;
   color: yellow;
 }
@@ -73,7 +73,16 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
 .logo {
+=======
+
+
+.logo{
+  /* display: flex;
+  justify-content: center; */
+  margin-left: -70px;
+>>>>>>> cdefef8bcb1cae8256983f7fb9155ae3727f1603
   height: 70px;
   width: 70px;
 }
