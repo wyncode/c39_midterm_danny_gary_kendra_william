@@ -22,7 +22,7 @@ function randomCover() {
     let img = covers[ num ];
     return img;
 };
-console.log(randomCover);
+
 
 const SongBox = (props) => {
   let {id} = useParams();
@@ -32,7 +32,7 @@ const SongBox = (props) => {
       <Card.Img src={randomCover()} alt="Album Cover" />
         <Card.ImgOverlay className='album'>
             <Card.Title style={{ textAlign:'center' }} >{props.title} </Card.Title>
-            <div className='whatever'>
+            <div className='PlayLink'>
               <Card.Link className='Play' href={`http://www.songsterr.com/a/wa/song?id=${props.id}`}>Learn To Play This Song!</Card.Link>
             </div>
       </Card.ImgOverlay>

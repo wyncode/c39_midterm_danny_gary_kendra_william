@@ -34,14 +34,11 @@ const MainPage = () => {
         <SearchForm search={search} onChange={handleChange} />
       </div>
       <Row>
-        {filteredSongs.slice(0, 9).map((song) => {
-          console.log(song.id);
-          return (
-            <div>
-              <SongBox key={song.id} id={song.id} title={song.title} />
-            </div>
-          );
-        })}
+        {filteredSongs.slice(0, 9).map((song) => (
+          <div key={song.id}>
+            <SongBox id={song.id} title={song.title} />
+          </div>
+        ))}
       </Row>
     </>
   );
