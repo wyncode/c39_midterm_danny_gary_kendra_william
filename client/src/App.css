@@ -7,7 +7,7 @@
   color: whitesmoke;
   padding: 10px;
   text-align: center;
-  background-color: #353E4B;
+  background-color: #353e4b;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 /*NAV BAR*/
@@ -24,9 +24,8 @@
   margin: auto;
   padding: 10px;
   text-align: center;
-  background-color: #353E4B;
-  opacity: .7;
-
+  background-color: #353e4b;
+  opacity: 0.7;
 }
 /* SEARCH BAR*/
 .searchForm {
@@ -48,7 +47,6 @@
 .Play {
   opacity: 0;
 }
-
 
 .PlayLink {
   height: 240px;
@@ -74,14 +72,15 @@
   text-align: center;
 }
 
-
-
-.logo{
+.logo {
   /* display: flex;
   justify-content: center; */
   margin-left: -70px;
   height: 70px;
   width: 70px;
-  
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
