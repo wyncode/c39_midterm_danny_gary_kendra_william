@@ -4,6 +4,7 @@ import SearchForm from './SearchForm';
 import SongBox from './SongBox';
 import Slideshow from './Slideshow';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Row} from 'react-bootstrap';
 
 const MainPage = () => {
   const [search, setSearch] = useState('');
@@ -25,40 +26,21 @@ const MainPage = () => {
   const filteredSongs = apiData.filter((song) =>
     song.title.toLowerCase().includes(search)
   );
-<<<<<<< HEAD
-console.log(filteredSongs);
-=======
->>>>>>> cdefef8bcb1cae8256983f7fb9155ae3727f1603
   return (
     <>
       <Slideshow />
       <div className="searchbar">
         <SearchForm search={search} onChange={handleChange} />
-<<<<<<< HEAD
-        <h1>Hello</h1>
-      </div>     
-      <div className="row">
-        {/* {filteredSongs.slice(0, 9).map((song) => { */}
-          return (
-            <>
-            <h1>HelloAgain</h1>
-            <div>
-              {/* <SongBox key={song.id} id={song.id} title={song.title} /> */}
-            </div>
-           </>
-          );
-        })}
-      </div>
-=======
       </div>
       <Row>
-        {filteredSongs.slice(0, 9).map((song) => (
+        {filteredSongs.slice(0, 9).map((song) => {
+          return(
           <div key={song.id}>
             <SongBox id={song.id} title={song.title} />
           </div>
-        ))}
+          )
+        })};
       </Row>
->>>>>>> cdefef8bcb1cae8256983f7fb9155ae3727f1603
     </>
   );
 };

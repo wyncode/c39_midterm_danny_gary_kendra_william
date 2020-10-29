@@ -48,7 +48,6 @@
   opacity: 0;
 }
 
-
 .PlayLink {
   height: 240px;
   width: 250px;
@@ -73,16 +72,10 @@
   text-align: center;
 }
 
-<<<<<<< HEAD
 .logo {
-=======
-
-
-.logo{
   /* display: flex;
   justify-content: center; */
   margin-left: -70px;
->>>>>>> cdefef8bcb1cae8256983f7fb9155ae3727f1603
   height: 70px;
   width: 70px;
 }
