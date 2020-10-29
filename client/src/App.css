@@ -12,7 +12,8 @@
 }
 /*NAV BAR*/
 .nav {
-  /* height: 8vh; */
+  height: 8vh;
+  display: flex;
   display: auto;
   justify-content: auto;
   align-items: center;
@@ -48,7 +49,8 @@
   opacity: 0;
 }
 
-.PalyLink {
+
+.PlayLink {
   height: 240px;
   width: 250px;
 }
@@ -73,8 +75,11 @@
 }
 
 
+
 .logo{
- 
+  /* display: flex;
+  justify-content: center; */
+  margin-left: -70px;
   height: 70px;
   width: 70px;
   
