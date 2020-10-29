@@ -16,7 +16,7 @@ const MainPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        `http://www.songsterr.com/a/ra/songs/byartists.json?artists=beatles` //need to confirm this api
+        `https://www.songsterr.com/a/ra/songs/byartists.json?artists=beatles` //need to confirm this api
       );
       // Save the fetch data into the apiData state var
       setApiData(response.data);
