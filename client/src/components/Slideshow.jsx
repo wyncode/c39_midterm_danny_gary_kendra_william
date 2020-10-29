@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
 import AbbyRoad from './albumImages/AbbyRoad.jpg';
+import AHardDayNight from './albumImages/AHardDayNight.jpg';
 import Beatles1 from './albumImages/Beatles1.jpg';
 import Beatles2 from './albumImages/Beatles2.jpg';
 import Beatles3 from './albumImages/Beatles3.jpg';
@@ -26,71 +27,78 @@ const Slideshow = () => {
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"
-          src={Beatles1}
+          src={AHardDayNight}
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"
-          src={Beatles2}
+          src={Beatles1}
           alt="Third slide"
         />
       </Carousel.Item>
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"
-          src={Beatles3}
+          src={Beatles2}
           alt="Fourth slide"
         />
       </Carousel.Item>
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"
-          src={BeatlesBlue}
+          src={Beatles3}
           alt="Fifth slide"
         />
       </Carousel.Item>
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"
-          src={Early}
+          src={BeatlesBlue}
           alt="Sixth slide"
         />
       </Carousel.Item>
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"
-          src={HardDayUK}
+          src={Early}
           alt="Seventh slide"
         />
       </Carousel.Item>
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"
-          src={Help}
+          src={HardDayUK}
           alt="Eighth slide"
         />
       </Carousel.Item>
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"
-          src={LetItBe}
+          src={Help}
           alt="Ninth slide"
         />
       </Carousel.Item>
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"
-          src={RubberSoul}
+          src={LetItBe}
           alt="Tenth slide"
         />
       </Carousel.Item>
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"
-          src={TheBeatles}
+          src={RubberSoul}
           alt="Eleventh slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item interval={4000}>
+        <img
+          className="d-block w-100"
+          src={TheBeatles}
+          alt="Twelfth slide"
         />
       </Carousel.Item>
     </Carousel>
