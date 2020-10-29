@@ -37,7 +37,7 @@ const MainPage = () => {
         <SearchForm search={search} onChange={handleChange} />
       </div>
       <Row>
-        {filteredSongs.map((song) => {
+        {filteredSongs && filteredSongs.map((song) => {
           return(
           <div key={song.id}>
             <SongBox id={song.id} title={song.title} />
