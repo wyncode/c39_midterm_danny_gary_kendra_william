@@ -15,6 +15,7 @@ const AboutTeamPage = () => {
             width: 200
           }}
           src={Gary}
+          alt={'Gary'}
         />
 
         <h5>Gary Chong-Qui</h5>
@@ -26,6 +27,7 @@ const AboutTeamPage = () => {
             width: 200
           }}
           src={Will}
+          alt={'Will'}
         />
 
         <h5>Will Dillard</h5>
@@ -41,6 +43,7 @@ const AboutTeamPage = () => {
             width: 240
           }}
           src={Danny}
+          alt={'Danny'}
         />
 
         <p>I always enjoy a great laugh and a new adventure!</p>
@@ -51,6 +54,7 @@ const AboutTeamPage = () => {
             width: 100
           }}
           src={Kendra}
+          alt={'Kendra'}
         />
 
         <p>

@@ -47,15 +47,13 @@
 .Play {
   opacity: 0;
 }
-/* .Play:hover {
-  opacity: 1;
-  color: yellow;
-} */
-.whatever {
+
+.PalyLink {
   height: 240px;
   width: 250px;
 }
-.whatever:hover a {
+
+.PlayLink:hover a {
   opacity: 1;
   color: yellow;
 }
