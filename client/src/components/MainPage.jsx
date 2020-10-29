@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Row} from 'react-bootstrap';
 
 const MainPage = () => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState('help');
   const [apiData, setApiData] = useState([]);
   const handleChange = (event) => {
     setSearch(event.target.value);

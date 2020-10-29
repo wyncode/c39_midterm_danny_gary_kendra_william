@@ -10,7 +10,7 @@ const SearchForm = ({ search, onChange }) => {
       type="text"
       value={search}
       size="lg"
-      placeholder="What Beatles Song Would You Like to Learn Today?"
+      placeholder="help"
     />
   );
 };
