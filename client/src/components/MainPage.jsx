@@ -34,12 +34,12 @@ console.log(filteredSongs);
         <h1>Hello</h1>
       </div>     
       <div className="row">
-        {filteredSongs.slice(0, 9).map((song) => {
+        {/* {filteredSongs.slice(0, 9).map((song) => { */}
           return (
             <>
             <h1>HelloAgain</h1>
             <div>
-              <SongBox key={song.id} id={song.id} title={song.title} />
+              {/* <SongBox key={song.id} id={song.id} title={song.title} /> */}
             </div>
            </>
           );
