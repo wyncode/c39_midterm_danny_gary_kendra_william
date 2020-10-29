@@ -26,7 +26,6 @@ const MainPage = () => {
   const filteredSongs = apiData.filter((song) =>
     song.title.toLowerCase().includes(search)
   );
-
   return (
     <>
       <Slideshow />

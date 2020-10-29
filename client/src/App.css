@@ -48,14 +48,13 @@
 .Play {
   opacity: 0;
 }
-/* .Play:hover {
-  opacity: 1;
-  color: yellow;
-} */
+
+
 .PlayLink {
   height: 240px;
   width: 250px;
 }
+
 .PlayLink:hover a {
   opacity: 1;
   color: yellow;
